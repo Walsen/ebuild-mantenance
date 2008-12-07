@@ -22,6 +22,8 @@ DEPEND="${RDEPEND}
 	>=dev-util/pkgconfig-0.23"
 
 src_install() {
+	python_needs_rebuild
+
 	emake DESTDIR="${D}" install || die "Install failed"
 	dodoc AUTHORS MAINTAINERS NEWS README COPYING || die
 }
