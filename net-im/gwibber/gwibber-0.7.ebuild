@@ -20,7 +20,8 @@ RDEPEND=">=dev-python/dbus-python-0.82.4
 	>=dev-python/egenix-mx-base-2.0.5
 	>=dev-python/feedparser-4.1
 	>=dev-python/gnome-python-2.2.23
-	>=dev-python/pyxdg-0.15"
+	>=dev-python/pyxdg-0.15
+	>=gnome-base/librsvg-2.22.2"
 DEPEND="virtual/python"
 
 S=${WORKDIR}/${PN}
