@@ -22,14 +22,7 @@ DEPEND="$RDEPEND"
 
 S=${WORKDIR}/${MY_P}
 
-src_unpack(){
-	unpack ${A}
-	cd "${S}"
-	epatch "${FILESDIR}/${P}-access_violation-gentoo.patch"
-}
-
 src_install(){
-
-	emake DESTDIR="${D}" install || die "Install failed"
-
+	
+	emake INSTALL_ROOT="${D}" install || die "Install failed"
 }
