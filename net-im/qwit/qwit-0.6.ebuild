@@ -22,10 +22,6 @@ DEPEND="$RDEPEND"
 
 S=${WORKDIR}/${MY_P}
 
-pkg_setup(){
-	qt4_pkg_setup
-}
-
 src_install(){
 	
 	emake INSTALL_ROOT="${D}" install || die "Install failed"
