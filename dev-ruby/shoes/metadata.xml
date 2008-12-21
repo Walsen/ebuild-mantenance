@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>ruby</herd>
+	<maintainer>
+		<email>srinclan@gmail.com</email>
+		<name>Sergio D. Rodriguez Inclan (ZeRoX)</name>
+	</maintainer>
+	<longdescription lang="en">
+		Shoes is a very informal graphics and windowing toolkit for Ruby.
+	</longdescription>
+	<use>
+		<flag name="video">Video support for Shoes</flag>
+	</use>
+</pkgmetadata>
+
