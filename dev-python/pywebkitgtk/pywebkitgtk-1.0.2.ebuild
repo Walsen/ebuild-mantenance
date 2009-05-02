@@ -8,7 +8,7 @@ SRC_URI="http://pywebkitgtk.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-python/pygtk-2.12.1-r2
