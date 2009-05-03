@@ -16,8 +16,9 @@ IUSE=""
 
 DEPEND=">=dev-python/python-distutils-extra-1.91.2
 	>=dev-python/dbus-python-0.82.4
-	=dev-python/pywebkitgtk-1.0.2
+	>=dev-python/pywebkitgtk-1.0.2
 	>=dev-python/notify-python-0.1.1
+	>=dev-python/imaging-1.1.6
 	>=dev-python/simplejson-2.0.4
 	>=dev-python/egenix-mx-base-2.0.5
 	>=dev-python/feedparser-4.1
