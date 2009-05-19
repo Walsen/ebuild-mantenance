@@ -1,0 +1,9 @@
+# ChangeLog for dev-ruby/abstract
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  26 Sep 2008; Alex Legler <gentoo@a3li.info> +metadata.xml,
+  +abstract-1.0.0.ebuild:
+  Initial ebuild based on work from Andreas Zuber <zuber@puzzle.ch> in bug
+  #228399
+
