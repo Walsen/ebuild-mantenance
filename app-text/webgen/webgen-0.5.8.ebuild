@@ -4,6 +4,8 @@
 
 inherit ruby gems
 
+USE_RUBY="ruby18 ruby19"
+
 DESCRIPTION="A template-based static website generator."
 HOMEPAGE="http://webgen.rubyforge.org/"
 
