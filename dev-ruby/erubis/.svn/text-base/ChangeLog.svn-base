@@ -1,9 +1,0 @@
-# ChangeLog for dev-ruby/erubis
-# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: $
-
-  26 Sep 2008; Alex Legler <gentoo@a3li.info> +metadata.xml,
-  +erubis-2.6.2.ebuild:
-  Initial ebuild based on work from Andreas Zuber <zuber@puzzle.ch> in bug
-  #228391
-
