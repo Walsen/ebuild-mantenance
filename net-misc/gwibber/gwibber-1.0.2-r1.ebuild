@@ -2,7 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit distutils eutils
+EAPI="2"
+
+inherit distutils
 
 DESCRIPTION="Gwibber is an open source microblogging client for GNOME developed
 with Python and GTK."
@@ -29,9 +31,7 @@ RDEPEND="virtual/python"
 
 S="${WORKDIR}"/"${PN}"
 
-src_unpack() {
-	unpack ${A}
-	cd "${S}"
+src_prepare() {
 	epatch "${FILESDIR}"/${P}-prefix.patch
 	epatch "${FILESDIR}"/${P}-locale.patch
 }
