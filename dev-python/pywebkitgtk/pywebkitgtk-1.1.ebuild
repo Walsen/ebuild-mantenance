@@ -2,6 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+EAPI="2"
+
+inherit distutils
+
 DESCRIPTION="Python bindings for the WebKit GTK+ port."
 HOMEPAGE="http://code.google.com/p/pywebkitgtk/"
 SRC_URI="http://pywebkitgtk.googlecode.com/files/${P}.tar.gz"
@@ -18,12 +22,9 @@ RDEPEND=">=dev-python/pygtk-2.14.0
 	>=dev-python/pygobject-2.16.1
 	>=net-libs/webkit-gtk-0_p40220"
 DEPEND="${RDEPEND}
-	virtual/python
-	>=dev-util/pkgconfig-0.23"
+	virtual/python"
 
 src_install() {
-	python_needs_rebuild
-
 	emake DESTDIR="${D}" install || die "Install failed"
 	dodoc AUTHORS MAINTAINERS NEWS README COPYING || die
 }
