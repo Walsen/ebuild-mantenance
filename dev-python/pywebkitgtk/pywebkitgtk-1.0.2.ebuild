@@ -4,8 +4,6 @@
 
 EAPI="2"
 
-inherit distutils
-
 DESCRIPTION="Python bindings for the WebKit GTK+ port."
 HOMEPAGE="http://code.google.com/p/pywebkitgtk/"
 SRC_URI="http://pywebkitgtk.googlecode.com/files/${P}.tar.gz"
@@ -25,6 +23,8 @@ DEPEND="${RDEPEND}
 	virtual/python"
 
 src_install() {
+	python_need_rebuild
+
 	emake DESTDIR="${D}" install || die "Install failed"
 	dodoc AUTHORS MAINTAINERS NEWS README COPYING || die
 }
