@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=dev-python/python-distutils-extra-1.91.2
+DEPEND=">=dev-python/python-distutils-extra-1.92
 	>=dev-python/dbus-python-0.82.4
 	>=dev-python/pywebkitgtk-1.1.4
 	>=dev-python/notify-python-0.1.1
