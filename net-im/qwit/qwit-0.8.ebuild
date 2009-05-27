@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="1"
+EAPI="2"
 
 inherit qt4
 
@@ -17,9 +17,14 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="|| ( ( x11-libs/qt-core x11-libs/qt-gui ) x11-libs/qt:4 )"
+DEPEND="x11-libs/qt-gui:4"
+RDEPEND="${DEPEND}"
 
 S=${WORKDIR}/${MY_P}
+
+src_configure() {
+	eqmake4 ${PN}.pro
+}
 
 src_install(){
 	emake INSTALL_ROOT="${D}" install || die "Install failed"
