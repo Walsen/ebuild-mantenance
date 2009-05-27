@@ -27,5 +27,6 @@ src_configure() {
 }
 
 src_install(){
-	emake INSTALL_ROOT="${D}" install || die "Install failed"
+	emake INSTALL_ROOT="${D}" install || die "emake install failed"
+	dodoc README || die "dodoc failed"
 }
