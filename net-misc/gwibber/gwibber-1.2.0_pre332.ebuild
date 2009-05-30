@@ -33,6 +33,5 @@ RDEPEND="virtual/python"
 S="${WORKDIR}"/"${PN}"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-prefix.patch
-	epatch "${FILESDIR}"/${P}-locale.patch
+	epatch "$FILESDIR"/"${PN}-prefix.patch" || die "Failed patching."
 }
